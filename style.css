@@ -1,0 +1,314 @@
+.top{
+    background-image: url(image/DB_2560x1600_062.webp);
+    background-color: azure;
+    background-size: cover;
+    padding: 180px 0;
+    color: aliceblue;
+    margin: 0;
+    text-align:center;
+}
+.top h1 {
+    font-size: 65px;
+    letter-spacing: 5px;
+}
+.about{
+    text-align: center;
+    background-color: azure;
+    padding: 100px;
+}
+h2{
+    margin: 0;
+}
+hr{
+    margin-bottom: 50px;
+    height: 5px;
+    width: 100px;
+    border: none;
+}
+.blue-line{
+    background-color: #7bc3d1;
+}
+.skills{
+    text-align: center;
+    padding: 50px;
+}
+.about table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+.box{
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 20px;
+    text-align: center;
+}
+.box img{
+    display: block;
+    margin: auto;
+}
+.portfolio{
+    background-color: yellowgreen;
+}
+.anime{
+    text-align: center;
+}
+.page {
+    display: flex;
+    justify-content: center;
+  }
+  .box1{
+    background-color: hotpink;
+    padding: 20px 0;
+    width: 75px;
+    text-align: center;
+    border: 2px solid #333;
+  }
+  .apple{
+      display: flex;
+  }
+
+  body{
+    cursor: url(image/yadon32px.png),auto;
+    margin: auto;
+  }
+
+/*リンクの形状*/
+#page-top a{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background:#942D2F;
+	border-radius: 5px;
+	width: 60px;
+	height: 60px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase; 
+	text-decoration: none;
+	font-size:0.6rem;
+	transition:all 0.3s;
+}
+
+#page-top a:hover{
+	background: #777;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+	position: fixed;
+	right: 10px;
+	bottom:10px;
+	z-index: 2;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateY(100px);
+}
+
+/*　上に上がる動き　*/
+
+#page-top.UpMove{
+	animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+
+#page-top.DownMove{
+	animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+  from {
+  	opacity: 1;
+	transform: translateY(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateY(100px);
+  }
+}
+
+h1.title{
+  font-family: 'Yuji Syuku', serif;
+}
+
+
+
+/*========= LoadingのためのCSS ===============*/
+
+/* Loading背景画面設定　*/
+#splash {
+  /*fixedで全面に固定*/
+position: fixed;
+width: 100%;
+height: 100%;
+z-index: 999;
+text-align:center;
+color: #fff;
+}
+
+/* Loading画像中央配置　*/
+#splash_text {
+position: absolute;
+top: 50%;
+left: 50%;
+  z-index: 999;
+transform: translate(-50%, -50%);
+color: #fff;
+width: 100%;
+}
+
+/*IE11対策用バーの線の高さ※対応しなければ削除してください*/
+#splash_text svg{
+  height: 2px;
+}
+
+/*割れる画面のアニメーション*/
+.loader_cover {
+  width: 100%;
+  height: 50%;
+  background-color: #7bc3d1;
+  transition: all .2s cubic-bezier(.04, .435, .315, .9);
+  transform: scaleY(1);
+}
+/*上の画面*/
+.loader_cover-up {
+  transform-origin: center top;
+}
+
+/*下の画面*/
+.loader_cover-down {
+  position: absolute;
+  bottom: 0;
+  transform-origin: center bottom;
+}
+/*クラス名がついたらY軸方向に0*/
+.coveranime {
+  transform: scaleY(0);
+}
+
+
+
+/* ページ指定のコード  */
+.pager .pagination {
+  text-align: center;
+}
+
+.pager .pagination li {
+  display: inline;
+  margin: 0 2px;
+  padding: 0;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  position: relative;
+  border-radius: 50px;
+}
+
+.pager .pagination li.pre,
+.pager .pagination li.next{
+  background: orangered;
+  color: #FFF;
+}
+
+.pager .pagination li a{
+  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display:table;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+
+.pager .pagination li.pre a,
+.pager .pagination li.next a{
+  color: #fff;
+}
+
+.pager .pagination li a span{
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.pager .pagination li a:hover,
+.pager .pagination li a.active{
+  color: #000;
+  background: tomato;
+  border-radius: 10px;
+  border-radius: 50px;
+  animation: animScale 0.4s ease-out;
+  transform-origin: 50% 50%;
+  -webkit-animation: animScale 0.4s ease-out;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: animScale 0.4s ease-out;
+  -moz-transform-origin: 50% 50%;
+}
+@keyframes animScale {
+  0% { transform: scale(0.8, 0.8); }
+  40% { transform: scale(1.2, 1.2); }
+  60% { transform: scale(1, 1); }
+  80% { transform: scale(1.1, 1.1); }
+  100% { transform: scale(1, 1); }
+}
+@-webkit-keyframes animScale {
+  0% { -webkit-transform: scale(0.8, 0.8); }
+  40% { -webkit-transform: scale(1.2, 1.2); }
+  60% { -webkit-transform: scale(1, 1); }
+  80% { -webkit-transform: scale(1.1, 1.1); }
+  100% { -webkit-transform: scale(1, 1); }
+}
+@-moz-keyframes animScale {
+  0% { -moz-transform: scale(0.8, 0.8); }
+  40% { -moz-transform: scale(1.2, 1.2); }
+  60% { -moz-transform: scale(1, 1); }
+  80% { -moz-transform: scale(1.1, 1.1); }
+  100% { -moz-transform: scale(1, 1); }
+}
+
+
+@media only screen and (max-width: 767px){
+  .pager .pagination li{
+    display: none;
+  }
+
+  .pager .pagination li.pre,
+  .pager .pagination li.next{
+    display: inline-block;
+    width: 40%;
+    height: 50px;
+    text-align: center;
+  }
+
+  .pager .pagination li.pre a,
+  .pager .pagination li.next a{
+    width: 100%;
+    text-align: center;
+  }
+
+  .pager .pagination li.pre span::after{
+    content: "　前の10件へ";
+  }
+
+  .pager .pagination li.next span::before{
+    content: "次の10件へ　";
+  }
+
+}
