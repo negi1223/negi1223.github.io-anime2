@@ -284,7 +284,7 @@ width: 100%;
 }
 
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 667px){
   .pager .pagination li{
     display: none;
   }
@@ -304,11 +304,11 @@ width: 100%;
   }
 
   .pager .pagination li.pre span::after{
-    content: "　前の10件へ";
+    content: "　前のページへ";
   }
 
   .pager .pagination li.next span::before{
-    content: "次の10件へ　";
+    content: "次のページへ　";
   }
 
 }
