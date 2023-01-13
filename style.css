@@ -74,6 +74,11 @@ hr{
     margin: auto;
   }
 
+
+  a{
+    text-decoration: none;
+  }
+
 /*リンクの形状*/
 #page-top a{
 	display: flex;
