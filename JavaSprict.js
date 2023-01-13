@@ -64,3 +64,4 @@ bar.animate(1.0, function () {//バーを描画する割合を指定します 1.
 	$(".loader_cover-down").addClass("coveranime");//カバーが下に下がるクラス追加
 	$("#splash").fadeOut();//#splashエリアをフェードアウト
 });
+
