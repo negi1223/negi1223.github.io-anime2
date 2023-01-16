@@ -76,6 +76,10 @@ a{
   text-decoration: none;
 }
 
+ul{
+  margin: 0px;
+}
+
 /*リンクの形状*/
 #page-top a{
 display: flex;
