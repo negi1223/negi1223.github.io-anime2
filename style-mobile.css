@@ -3,18 +3,19 @@
   background-color: azure;
   background-size: cover;
   padding: 180px 0;
-  color: aliceblue;
+  color: rgb(5, 185, 17);
   margin: 0;
   text-align:center;
+  
 }
 .top h1 {
-  font-size: 65px;
+  font-size: 90%;
   letter-spacing: 5px;
 }
 .about{
   text-align: center;
   background-color: azure;
-  padding: 100px;
+  padding: 20px;
 }
 h2{
   margin: 0;
@@ -29,8 +30,9 @@ hr{
   background-color: #7bc3d1;
 }
 .skills{
-  text-align: center;
   padding: 50px;
+  margin: auto;
+  text-align: center;
 }
 .about table{
   margin-left: auto;
@@ -52,6 +54,7 @@ hr{
   background-color: yellowgreen;
 }
 .anime{
+  margin: auto;
   text-align: center;
 }
 .page {
@@ -66,6 +69,7 @@ hr{
   border: 2px solid #333;
 }
 
+
 body{
   cursor: url(image/yadon32px.png),auto;
   margin: auto;
@@ -76,9 +80,12 @@ a{
   text-decoration: none;
 }
 
+
 ul{
   margin: 0px;
 }
+
+
 
 /*リンクの形状*/
 #page-top a{
@@ -290,7 +297,7 @@ transform-origin: 50% 50%;
 }
 
 
-@media only screen and (max-width: 667px){
+@media only screen and (max-width: 700px){
 .pager .pagination li{
   display: none;
 }
@@ -318,7 +325,6 @@ transform-origin: 50% 50%;
 }
 
 }
-
 
 
 
