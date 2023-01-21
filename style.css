@@ -81,6 +81,7 @@ hr{
 
   ul{
     margin: 0px;
+    padding-inline-start: 0px;
   }
 
 /*リンクの形状*/
