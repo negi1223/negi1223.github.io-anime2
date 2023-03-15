@@ -86,6 +86,9 @@ ul{
   padding-inline-start: 0px;
 }
 
+.under{
+  border-bottom: solid 2px rgb(80, 168, 236);
+}
 
 
 /*リンクの形状*/
