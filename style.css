@@ -219,8 +219,12 @@ input {
 }
 .item {
   width: calc(50% - 10px);
+  text-align: center;
 }
-
+.item1{
+  width: calc(50% - 10px);
+  text-align: center;
+}
 
 
 
