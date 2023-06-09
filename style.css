@@ -206,7 +206,7 @@ input {
 
 #menu_bar01:checked ~ #links01 li,
 #menu_bar02:checked ~ #links02 li {
-  height: 54px;
+  height: 45px;
   opacity: 1;
 }
 
