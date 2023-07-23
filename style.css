@@ -7,6 +7,11 @@
     margin: 0;
     text-align:center;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
 .top h1 {
     font-size: 65px;
     letter-spacing: 5px;
