@@ -93,6 +93,18 @@ hr{
  border-bottom: solid 2px rgb(80, 168, 236);
 }
 
+
+  b{
+    color: #000;
+    transition: 0.3s;
+  }
+
+
+  b:hover{
+    color: rgb(0, 89, 255);
+  }
+
+
 /*リンクの形状*/
 #page-top a{
 	display: flex;
